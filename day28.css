@@ -1,0 +1,33 @@
+.one{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin: 200px auto;
+    font-size: 50px;
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.one::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 10px solid red ;
+    border-radius: 50%;
+    border-left: 10px solid white;
+}
+.one::before{
+    content: "";
+    position: absolute;
+    width: 218px;
+    height: 218px;
+    border: 10px solid blue ;
+    border-radius: 50%;
+    border-right: 10px solid white;
+    transform: rotate(0.5turn);
+}
